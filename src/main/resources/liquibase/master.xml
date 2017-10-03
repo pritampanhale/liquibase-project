@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<databaseChangeLog 
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd"> 
+    
+    <changeSet author="pritam.panhale" id="1">
+    	<createTable tableName="test_table">
+    		<column name="test_table_id" type="int"> <constraints  primaryKey="true" /> </column>
+    		<column name="any_text" type="varchar(255)"></column>
+    	</createTable>
+    </changeSet>
+    
+       <changeSet author="pritam.panhale" id="2">
+    	<createTable tableName="customer">
+    		<column name="customer_id" type="int"> <constraints  primaryKey="true" /> </column>
+    		<column name="any_text" type="varchar(255)"></column>
+    	</createTable>
+    </changeSet>
+    
+       <changeSet author="pritam.panhale" id="3">
+    	<createTable tableName="supplier">
+    		<column name="supplier_id" type="int"> <constraints  primaryKey="true" /> </column>
+    		<column name="any_text" type="varchar(255)"></column>
+    	</createTable>
+    </changeSet>
+    
+</databaseChangeLog> 
